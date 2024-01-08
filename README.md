@@ -8,6 +8,7 @@ The model eliminates the need for intermediate spectrogram conversion, reducing 
 # TODO
 * fix readme: add architecture, add results on ESC-50 dataset
 * convert the notebook to python scripts
+* change LR and batch size, potentialy add LR scheduler
 
 # References
 
