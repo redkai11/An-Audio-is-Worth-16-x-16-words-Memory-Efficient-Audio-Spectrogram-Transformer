@@ -5,6 +5,10 @@ This repository contains the implementation for Memory Efficient Audio Melspectr
 # Introduction
 The model eliminates the need for intermediate spectrogram conversion, reducing memory and storage requirements and improving efficiency. This also increases ease of use, as audio processing is handled directly by the model. This model also leverages transformer introduced in [AST: Audio Spectrogram Transformer](https://arxiv.org/abs/2104.01778).
 
+# TODO
+* fix readme: add architecture, add results on ESC-50 dataset
+* convert the notebook to python scripts
+
 # References
 
 @ARTICLE{9174990, author={K. W. {Cheuk} and H. {Anderson} and K. {Agres} and D. {Herremans}}, journal={IEEE Access}, title={nnAudio: An on-the-Fly GPU Audio to Spectrogram Conversion Toolbox Using 1D Convolutional Neural Networks}, year={2020}, volume={8}, number={}, pages={161981-162003}, doi={10.1109/ACCESS.2020.3019084}}
