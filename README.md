@@ -1,14 +1,24 @@
 # Memory-Efficient-Audio-Spectrogram-Tranformer-Model
 
-This repository contains the implementation for Memory Efficient Audio Melspectrogram Tranformer Model (MEAMTM) which utilizes nnAudio and the Audio Spectrogram Transformer to offer a memory-efficient solution for audio classification. With this model, you can directly feed audio waveforms without the need to convert them into spectrograms separately, saving both storage and memory.
 
 # Introduction
-The model eliminates the need for intermediate spectrogram conversion, reducing memory and storage requirements and improving efficiency. This also increases ease of use, as audio processing is handled directly by the model. This model also leverages transformer introduced in [AST: Audio Spectrogram Transformer](https://arxiv.org/abs/2104.01778).
+This repository contains the implementation for Memory Efficient Audio Melspectrogram Tranformer Model (MEAMTM) which utilizes nnAudio and the Audio Spectrogram Transformer to offer a memory-efficient solution for audio classification. With this model, you can directly feed audio waveforms without the need to convert them into spectrograms separately, saving both storage and memory. The proposed model eliminates the need for intermediate spectrogram conversion, reducing memory and storage requirements and improving efficiency. This also increases ease of use, as audio processing is handled directly by the model. This model also leverages transformer introduced in [AST: Audio Spectrogram Transformer](https://arxiv.org/abs/2104.01778).
+
+# Key Advantages
+* End-to-end neural network training with an on-the-fly time-frequency conversion layer (Cheuk et al., 2020)
+* Faster processing speed compared to traditional approaches, in terms of training and inference time
+* Lower computational requirements
+* May be able to achieve SOTA results as with AST but further experiments need to be done
+
+# Takeaway
+* Performance is poor on small datasets, a known issue with DeiT, may be able to resolve this by using smaller num_heads and less Encoder blocks/depth
+* Sensitive to Learning Rate, requires careful choice of initial learning rate and learning scheduler with appropriate parameters
 
 # TODO
-* fix readme: add architecture, add results on ESC-50 dataset
+* fix readme
+* add architecture diagram
+* add results on ESC-50 dataset
 * convert the notebook to python scripts
-* change LR and batch size, potentialy add LR scheduler
 
 # References
 
